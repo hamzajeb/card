@@ -1,0 +1,38 @@
+<div style="margin:0 35vw;margin-bottom: 200px;">
+<mat-card class="card"  style="width: 400px ;">
+
+    
+    <mat-card-content class="card-main" style="height: 70vh;">
+      <p class="discount">10%</p>
+      <div class="product-container">
+            <div class="p" (mouseover)="changImage($event)"><img  src="./../../../assets/imgs/img2.jpg" ></div>
+            <div class="p" (mouseover)="changImage($event)"><img  src="./../../../assets/imgs/img3.jpg" ></div>
+            <div class="p" (mouseover)="changImage($event)"><img  src="./../../../assets/imgs/img1.jpg" ></div>
+      </div>
+      <div class="image" >
+          <img mat-card-image src="{{url}}" style="height: 70vh;object-fit: cover;object-position: center top;">
+      </div>
+      <div class="cart-item" style="width:430px;margin-left:-15px">
+          <ul >
+              <li><a class='a' href="" style="width: 50%;text-align:center"><mat-icon style="font-size: 30px;display:inline-block;
+                vertical-align: middle;line-height: normal;margin-bottom:13px ;">favorite</mat-icon></a></li>
+              <li><a class='b' href="" style="width: 50%;text-align:center"><mat-icon style="font-size: 30px;display:inline-block;
+                vertical-align: middle;line-height: normal;margin-bottom:13px ;">shopping_basket</mat-icon></a></li>
+          </ul>
+      </div>
+    </mat-card-content>
+    <mat-card-actions >
+        <div class="x" style="text-align:center;font-family: 'Lobster', cursive;font-size: 25px;">Mini Robe</div>
+        <br>
+        <p style="text-align:center;font-size: 14px;">Mini robe tricotée à manches courtes et col cache-cœur A-Line</p>
+        <div style="text-align: center;">
+          <button mat-icon-button style="color: gold;"  *ngFor="let r of ratingArr;index as i" (click)="onClick(i)">
+            <mat-icon>{{returnStar(i)}}</mat-icon>
+          </button>
+        </div>
+        <br>
+        <p style="text-align:center;font-weight: bold;font-size: 18px;">550 MAD</p>
+        <!-- <div>{{rating}}</div> -->
+    </mat-card-actions>
+  </mat-card>
+</div>

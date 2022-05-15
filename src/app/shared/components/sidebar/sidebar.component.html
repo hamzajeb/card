@@ -1,0 +1,28 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <h2>Hamza Jebbour</h2>
+            <h4>hamzajebbour10@gmail.com</h4>
+        </div>
+        <img  src="https://cdn.pixabay.com/photo/2017/05/29/19/13/fire-and-water-2354583__340.jpg"alt="">
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Pages</h2>
+    <a mat-list-item routerLinkActive="list-item-active" [routerLink]="'/'" [routerLinkActiveOptions]="{exact:true}">Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" [routerLink]="'/posts'" [routerLinkActiveOptions]="{exact:true}">posts</a>
+    <a mat-list-item routerLinkActive="list-item-active" [routerLink]="'/articles'" [routerLinkActiveOptions]="{exact:true}">articles</a>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Tools</h2>
+    <a mat-list-item  routerLink="/contactes">
+        <mat-icon>import_contacts</mat-icon> Contactes
+    </a>
+    <a mat-list-item  routerLink="/phone">
+        <mat-icon>contact_phone</mat-icon> Leads
+    </a>
+
+
+</mat-nav-list>

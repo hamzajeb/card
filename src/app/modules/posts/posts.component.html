@@ -1,0 +1,13 @@
+<!-- <div class="example-button-container">
+    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" (click)="ajouter()">
+      <mat-icon>plus_one</mat-icon>
+    </button>
+  </div>
+  <br>
+<mat-divider></mat-divider> -->
+<br>
+  <button mat-icon-button style="color: gold;"  *ngFor="let r of ratingArr;index as i" (click)="onClick(i)">
+    <mat-icon>{{returnStar(i)}}</mat-icon>
+  </button>
+
+<div>{{rating}}</div>
